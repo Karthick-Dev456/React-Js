@@ -4,11 +4,12 @@ import ClassComponent from './pages/ClassComponent'
 import ErrorBoundary from './pages/ErrorBoundary'
 import BugContainer from './pages/BugContainer'
 import PureContainer from './pages/PureContainer'
+import UseRefHook from './pages/UseRefHook'
 
 const App = () => {
     return (
         <div>
-            <PureContainer />
+            <UseRefHook />
         </div>
     )
 }
