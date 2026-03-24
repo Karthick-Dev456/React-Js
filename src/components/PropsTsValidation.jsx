@@ -13,6 +13,7 @@ const PropsTsValidation = ({ name = 'Kumar', age, isActive }) => {
     if (typeof isActive !== 'boolean') {
         throw new Error('Is Active must be a boolean')
     }
+    
     return (
         <div>
             <h1>PropsTsValidation</h1>

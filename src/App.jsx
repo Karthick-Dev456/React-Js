@@ -6,11 +6,13 @@ import BugContainer from './pages/BugContainer'
 import PureContainer from './pages/PureContainer'
 import UseRefHook from './pages/UseRefHook'
 import UseReducerHook from './pages/UseReducerHook'
+import PropsValidation from './pages/PropsValidation'
+
 
 const App = () => {
     return (
         <div>
-            <UseReducerHook />
+            <PureContainer />
         </div>
     )
 }
