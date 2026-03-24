@@ -1,13 +1,14 @@
 import React, { useReducer } from 'react'
 
-const initialState = { count: 0 }
+const initialState = 0
 
 function counterReducer(state, action) {
-    switch (action.type) {
+
+    switch (action) {
         case 'increment':
-            return { count: state.count + 1 }
+            return state + 1
         case 'decrement':
-            return { count: state.count - 1 }
+            return state - 1 
         case 'reset':
             return initialState
         default:
@@ -16,24 +17,29 @@ function counterReducer(state, action) {
 }
 
 const UseReducerHook = () => {
-    const [state, dispatch] = useReducer(counterReducer, initialState)
+    const [count, dispatchCount] = useReducer(counterReducer, initialState)
 
     return (
         <section>
             <h1>useReducer Hook</h1>
             <p>
-                Count: <strong>{state.count}</strong>
+                Count: <strong>{count}</strong>
             </p>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                <button type="button" onClick={() => dispatch({ type: 'increment' })}>
+
+                <button type="button" onClick={() => dispatchCount('increment')}>
                     Increment
                 </button>
-                <button type="button" onClick={() => dispatch({ type: 'decrement' })}>
+
+                <button type="button" onClick={() => dispatchCount('decrement')}>
                     Decrement
                 </button>
-                <button type="button" onClick={() => dispatch({ type: 'reset' })}>
+
+                <button type="button" onClick={() => dispatchCount('reset')}>
                     Reset
                 </button>
+
+
             </div>
         </section>
     )

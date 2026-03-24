@@ -6,7 +6,7 @@ const movieContext = createContext()
 
 const UseContextHook = () => {
     return (
-        <movieContext.Provider value={{"title": "Avengers", "year": 2012}}>
+        <movieContext.Provider value={{title: "Avengers", year: 2012}}>
             <div>
                 <h1>UseContextHook</h1>
                 <Comics />
