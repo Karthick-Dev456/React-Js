@@ -2,11 +2,12 @@ import React, { useRef, useState } from 'react'
 
 const UncontrolledComponent = () => {
     const nameRef = useRef(null)
-    const [submittedName, setSubmittedName] = useState('')
+    const [name, setName] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setSubmittedName(nameRef.current.value)
+
+        setName(nameRef.current.value)
         nameRef.current.value = ''
         nameRef.current.focus()
     }
@@ -14,15 +15,15 @@ const UncontrolledComponent = () => {
     return (
         <div>
             <h1>Uncontrolled Component</h1>
+
             <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    ref={nameRef}
-                    placeholder="Enter your name"
-                />
-                <button type="submit">Submit</button>
+
+                <input type="text" ref={nameRef} placeholder='Enter a name'  className='ring-1 mx-1' />
+                <button type="submit" className='ring-1 mx-1'>Submit</button>
+
             </form>
-            {submittedName && <p>Submitted Name: {submittedName}</p>}
+
+            {name && <p>Submitted Name: {name}</p>}
         </div>
     )
 }
