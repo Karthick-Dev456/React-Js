@@ -7,12 +7,14 @@ import PureContainer from './pages/PureContainer'
 import UseRefHook from './pages/UseRefHook'
 import UseReducerHook from './pages/UseReducerHook'
 import PropsValidation from './pages/PropsValidation'
+import UseMemoHook from './pages/UseMemoHook'
+
 
 
 const App = () => {
     return (
         <div>
-            <PureContainer />
+            <BugContainer />
         </div>
     )
 }
