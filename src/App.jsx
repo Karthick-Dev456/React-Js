@@ -9,13 +9,13 @@ import UseReducerHook from './pages/UseReducerHook'
 import PropsValidation from './pages/PropsValidation'
 import UseMemoHook from './pages/UseMemoHook'
 import UncontrolledComponent from './pages/UncontrolledComponent'
-
+import UseContextHook from './pages/UseContextHook'
 
 
 const App = () => {
     return (
         <div>
-            <UncontrolledComponent />
+            <UseContextHook />
         </div>
     )
 }

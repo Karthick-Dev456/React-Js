@@ -4,6 +4,7 @@ import { movieContext } from '../../pages/UseContextHook'
 
 const Mcu = () => {
     const movie = useContext(movieContext)
+    
     return (
         <div>
             <h1>Mcu</h1>

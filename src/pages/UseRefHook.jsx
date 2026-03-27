@@ -19,10 +19,10 @@ const UseRefHook = () => {
 
             <form onSubmit={handleSubmit}>
 
-                <label htmlFor="">Username</label>
+                <label>Username</label>
                 <input autoFocus className='ring-1 mx-1' value={name} type="text" ref={inputRef} onChange={event => setName(event.target.value)} />
 
-                <label htmlFor="">Password</label>
+                <label>Password</label>
                 <input className='ring-1 mx-1' value={password} type="text" onChange={event => setPassword(event.target.value)} />
                 <button className='ring-1 mx-1 px-1' type="submit">Submit</button>
 
