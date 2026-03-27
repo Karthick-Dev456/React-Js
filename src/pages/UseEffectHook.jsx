@@ -1,4 +1,6 @@
 import React, { useEffect, useState} from 'react'
+import { submitButton } from '../utilities/Styles'
+
 
 const UseEffectHook = () => {
 
@@ -23,8 +25,12 @@ const UseEffectHook = () => {
         <div>
             <p>Positive Count: {positiveCount}</p>
             <p>Negative Count: {negativeCount}</p>
-            <button onClick={() => setPositiveCount(positiveCount + 1)}>Increment Positive</button>
-            <button onClick={() => setNegativeCount(negativeCount - 1)}>Decrement Negative</button>
+            <button onClick={() => setPositiveCount(positiveCount + 1)} className={submitButton}>
+                Increment Positive
+            </button>
+            <button onClick={() => setNegativeCount(negativeCount - 1)} className={submitButton}>
+                Decrement Negative
+            </button>
         </div>
     )
 }

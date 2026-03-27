@@ -1,0 +1,1 @@
+export const submitButton = "bg-blue-400 text-white font-bold px-4 py-2 rounded cursor-pointer";

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { submitButton } from '../utilities/Styles'
 
 const LifeCycle = () => {
 
@@ -19,7 +20,9 @@ const LifeCycle = () => {
     return (
         <div>
             <h1>Count: {count}</h1>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button onClick={() => setCount(count + 1)} className={submitButton}>
+                Increment
+            </button>
         </div>
     )
 }

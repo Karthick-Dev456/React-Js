@@ -1,4 +1,5 @@
 import React from "react";
+import { submitButton } from "./Styles";
 
 const ErrorMessage = () => {
     return (
@@ -9,7 +10,7 @@ const ErrorMessage = () => {
                 </h2>
                 <button
                     onClick={() => (window.location.href = "/")}
-                    className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+                    className={`${submitButton} mt-6 shadow hover:bg-blue-700 transition`}
                 >
                     Go Back Home
                 </button>

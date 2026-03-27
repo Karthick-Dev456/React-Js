@@ -1,4 +1,5 @@
 import React from 'react'
+import { submitButton } from '../utilities/Styles'
 
 const PureComponent = ({ framework, setFramework }) => {
 
@@ -8,7 +9,9 @@ const PureComponent = ({ framework, setFramework }) => {
         <div>
             <h1>Pure Component</h1>
             <p>Framework: {framework}</p>
-            <button className='bg-blue-400 text-white p-2 rounded-2xl' onClick={() => setFramework("Django")}>Change Framework</button>
+            <button className={submitButton} onClick={() => setFramework("Django")}>
+                Change Framework
+            </button>
         </div>
     )
 }

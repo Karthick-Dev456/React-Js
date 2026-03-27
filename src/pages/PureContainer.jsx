@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PureComponent from '../components/PureComponent'
+import { submitButton } from '../utilities/Styles'
 
 const PureContainer = () => {
 
@@ -10,7 +11,9 @@ const PureContainer = () => {
         <div>
 
             <p>Count: {count}</p>
-            <button className='bg-blue-400 text-white p-2 rounded-2xl' onClick={() => setCount(count + 1)}>Increment</button>
+            <button className={submitButton} onClick={() => setCount(count + 1)}>
+                Increment
+            </button>
             <h1>Pure Container</h1>
 
             <PureComponent  framework={framework} setFramework={setFramework} />

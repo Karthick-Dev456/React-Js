@@ -10,12 +10,16 @@ import PropsValidation from './pages/PropsValidation'
 import UseMemoHook from './pages/UseMemoHook'
 import UncontrolledComponent from './pages/UncontrolledComponent'
 import UseContextHook from './pages/UseContextHook'
+import UseEffectHook from './pages/UseEffectHook'
+import FormCheckbox from './pages/FormCheckbox'
+import FormRadioButton from './pages/FormRadioButton'
 
 
 const App = () => {
     return (
         <div>
-            <UseContextHook />
+            <FormCheckbox />
+            <FormRadioButton />
         </div>
     )
 }

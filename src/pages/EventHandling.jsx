@@ -1,13 +1,12 @@
 import React from 'react'
+import { submitButton } from '../utilities/Styles'
 
 const EventHandling = () => {
 
-    // Function without parameters
     const handleClick = () => {
         alert("Button clicked without parameters!")
     }
 
-    // Function with parameters
     const handleClickWithParam = (name) => {
         alert(`Button clicked with parameter: ${name}`)
     }
@@ -17,14 +16,13 @@ const EventHandling = () => {
             <h2>Event Handling Component</h2>
             
             <div>
-                <button onClick={handleClick}>
+                <button onClick={handleClick} className={submitButton}>
                     Click Me (No Params)
                 </button>
             </div>
 
             <div>
-                {/* To pass a parameter, we must use an arrow function in the onClick handler */}
-                <button onClick={() => handleClickWithParam("React Developer")}>
+                <button onClick={() => handleClickWithParam("React Developer")} className={submitButton}>
                     Click Me (With Params)
                 </button>
             </div>

@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react'
+import { submitButton } from '../utilities/Styles'
 
 const initialState = 0
 
@@ -25,17 +26,17 @@ const UseReducerHook = () => {
             <p>
                 Count: <strong>{count}</strong>
             </p>
-            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+            <div className='flex gap-2'>
 
-                <button type="button" onClick={() => dispatchCount('increment')}>
+                <button type="button" onClick={() => dispatchCount('increment')} className={submitButton}>
                     Increment
                 </button>
 
-                <button type="button" onClick={() => dispatchCount('decrement')}>
+                <button type="button" onClick={() => dispatchCount('decrement')} className={submitButton}>
                     Decrement
                 </button>
 
-                <button type="button" onClick={() => dispatchCount('reset')}>
+                <button type="button" onClick={() => dispatchCount('reset')} className={submitButton}>
                     Reset
                 </button>
 

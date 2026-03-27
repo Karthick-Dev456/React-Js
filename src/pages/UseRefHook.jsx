@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { submitButton } from '../utilities/Styles'
 
 const UseRefHook = () => {
 
@@ -24,7 +25,7 @@ const UseRefHook = () => {
 
                 <label>Password</label>
                 <input className='ring-1 mx-1' value={password} type="text" onChange={event => setPassword(event.target.value)} />
-                <button className='ring-1 mx-1 px-1' type="submit">Submit</button>
+                <button className={submitButton} type="submit">Submit</button>
 
             </form>
 
